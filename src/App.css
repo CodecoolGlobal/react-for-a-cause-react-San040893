@@ -16,3 +16,26 @@
   top: 2%;
   left: 45%;
 }
+
+.background {
+  position: relative;
+  width: 100%;
+}
+
+#aboutButton {
+  position: absolute;
+  left: 85%;
+  top: 4%;
+}
+
+#submit {
+  position: absolute;
+  left: 85%;
+  top: 12%;
+}
+
+#contact {
+  position: absolute;
+  left: 85%;
+  top: 8%;
+}
