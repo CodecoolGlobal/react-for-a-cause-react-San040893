@@ -47,6 +47,16 @@
   top: 14%;
 }
 
+#submit:hover {
+  background-color: #fb5c00;
+}
+#aboutButton:hover {
+  background-color: #fb5c00;
+}
+#contact:hover {
+  background-color: #fb5c00;
+}
+
 #contact {
   background-color: #ff7729;
   color: white;
