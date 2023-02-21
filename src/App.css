@@ -9,7 +9,9 @@
 }
 
 .header {
-  align-items: center;
+  background-image: url(../public/img/header.png);
+  width: 100%;
+  height: 180%;
 }
 #logo {
   position: absolute;
@@ -23,8 +25,8 @@
 }
 
 #aboutButton {
-  position: absolute;
-  left: 85%;
+  position: relative;
+  margin-left: 85%;
   top: 4%;
 }
 
