@@ -1,15 +1,18 @@
-import Header from './Header';
-import Body from './Body';
-import Footer from './Footer';
-import './App.css';
+import Header from "./Header";
+import Landing from "./Landing";
+import Footer from "./Footer";
+import "./App.css";
+import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Body />
-     <Footer />
-     
+      <Header />
+      <Landing />
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }
