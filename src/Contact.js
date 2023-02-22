@@ -1,8 +1,10 @@
-import React from 'react'
-import shark from "./img/shark.jpg"
+import React from "react";
+import shark from "./img/shark.jpg";
 
 export default function Contact() {
   return (
-    <div><img className={`background`} src={shark}/></div>
-  )
+    <div>
+      <div className="shark"></div>;
+    </div>
+  );
 }

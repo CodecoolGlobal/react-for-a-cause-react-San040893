@@ -11,9 +11,6 @@ export default function Header() {
       <a id="aboutButton" href="" target="_blank">
         About Us
       </a>
-      <a id="contact" href="">
-        Contact Us
-      </a>
       <a id="submit" href="">
         Join Us
       </a>

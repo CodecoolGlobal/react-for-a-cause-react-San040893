@@ -17,6 +17,30 @@
   top: 2%;
   left: 45%;
 }
+.turtle {
+  background-image: url(./img/turtle.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-image: no-repeat;
+  background-size: 100% 100%;
+}
+.ship {
+  background-image: url(./img/ship.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-image: no-repeat;
+  background-size: 100% 100%;
+}
+.shark {
+  background-image: url(./img/shark.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-image: no-repeat;
+  background-size: 100% 100%;
+}
 
 .background {
   position: relative;
@@ -31,8 +55,9 @@
   text-decoration: none;
   display: inline-block;
   position: absolute;
+  top: 4%;
   left: 85%;
-  top: 2%;
+  width: 5%;
 }
 
 #submit {
@@ -44,7 +69,7 @@
   display: inline-block;
   position: absolute;
   left: 85%;
-  top: 14%;
+  top: 10%;
 }
 
 #submit:hover {
@@ -57,14 +82,6 @@
   background-color: #fb5c00;
 }
 
-#contact {
-  background-color: #ff7729;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  position: absolute;
-  left: 85%;
-  top: 8%;
+.welcome {
+  display: flexbox;
 }
