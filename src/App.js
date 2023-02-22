@@ -1,18 +1,14 @@
-import Header from "./Header";
-import Landing from "./Landing";
-import Footer from "./Footer";
-import "./App.css";
-import About from "./About";
-import Contact from "./Contact";
+import logo from './logo.svg';
+import './App.css';
+import {NavBar} from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Banner } from './components/Banner';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Landing />
-      <About />
-      <Contact />
-      <Footer />
+     <NavBar />
+     <Banner />
     </div>
   );
 }
