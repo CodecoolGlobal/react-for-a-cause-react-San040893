@@ -3,12 +3,17 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
+import logo from "../assets/img/logo.png";
 
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = [
+    "Safe Wildlife",
+    "Stop Illegal Fishing",
+    "Protect The Ocean",
+  ];
   const [text, setText] = useState("");
 
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -38,12 +43,12 @@ export function Banner() {
     }
 
     if (!isDeleting && updatedText === fullText) {
-        setIsDeleting(true);
-        setDelta(period);
-    } else if(isDeleting && updatedText === '') {
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-        setDelta(500);
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
     }
   };
 
@@ -52,17 +57,19 @@ export function Banner() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} medium={6} xl={7}>
-            <span className="tagline"> Welcome to our NGO-Website</span>
+            <span className="tagline">
+              Protecting marine wildlife worldwide
+            </span>
             <h1>
-              {"SeaShepheard"}<br></br>
+              {"SeaShepheard"}
+              <br></br>
               <span className="wrap">{text} </span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
+              Sea Shepherd’s sole mission is to protect and conserve the world’s
+              oceans and marine wildlife. We work to defend all marine wildlife,
+              from whales and dolphins, to sharks and rays, to fish and krill,
+              without exception.
             </p>
             <button onClick={() => console.log("connect")}>
               lets Connect <ArrowRightCircle size={25} />

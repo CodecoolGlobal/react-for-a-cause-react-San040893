@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import { Navbar, Container , Nav} from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import logo from "../assets/img/logo.png";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import twitter from "../assets/img/twitter.png";
 
-export  function NavBar() {
+export function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, seScrolled] = useState(false);
 
@@ -70,13 +70,13 @@ export  function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a href="https://twitter.com/SeaShepherdSSCS">
+                <img src={twitter} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/SeaShepherdSSCS/">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/seashepherdsscs/">
                 <img src={navIcon3} alt="" />
               </a>
             </div>
