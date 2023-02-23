@@ -3,6 +3,7 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const { Phone } = require("react-bootstrap-icons");
+const fs = require('fs');
 
 //Server used to send Emails
 const app = express();
@@ -15,8 +16,8 @@ const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
     //For google you have to go to Gmail and set a application Password!
-    user: "xxx@gmail.com",
-    pass: "xxx",
+    user: "xXx",
+    pass: "XxX",
   },
 });
 
@@ -37,7 +38,7 @@ router.post("/contact", (req, res) => {
   const mail = {
     from: name,
     //Our Email Adress
-    to: "xxx@gmail.com",
+    to: "mXxX@gmail.com",
     subject: "Contact Form SeaShepheard",
     html: ` <p> Name: ${name}</p>
         <p> E-Mail: ${email}</p>
@@ -54,3 +55,4 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+

@@ -79,7 +79,7 @@ export function NavBar() {
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
-              <Nav.Link
+              <Nav.Link style={{color:'red'}}
                 href="#contact"
                 className={
                   activeLink === "contact"
