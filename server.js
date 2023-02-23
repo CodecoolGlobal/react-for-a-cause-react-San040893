@@ -9,9 +9,12 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.use(express.static("./public"));
+app.listen(port, () => console.log(`http://127.0.0.1:${port}`));
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(`${__dirname}/public/index.html`));
+});
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
