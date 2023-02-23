@@ -3,9 +3,9 @@ import { Container, Col, Row, Tab } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/whale.jpg";
+import projImg2 from "../assets/img/rescure.jpg";
+import projImg3 from "../assets/img/saleship.jpg";
 
 export function Projects() {
   const projects = [
@@ -72,8 +72,18 @@ export function Projects() {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">ABCDEFG</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  {" "}
+                  {projects.map((project, index) => {
+                    return <ProjectCard key={index} {...project} />;
+                  })}
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  {" "}
+                  {projects.map((project, index) => {
+                    return <ProjectCard key={index} {...project} />;
+                  })}
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

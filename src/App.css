@@ -353,6 +353,9 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-image: url(../src/assets/img/moving.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .skill-bx {
@@ -399,7 +402,9 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 .project {
   padding: 5rem;
   position: relative;
-  background-color: #111111;
+  background-image: url(../src/assets/img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project h2 {
