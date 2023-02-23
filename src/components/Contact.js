@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useState } from "react";
 import turtleImg from "../assets/img/turtle.png";
 
@@ -79,6 +79,7 @@ export const Contact = () => {
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
+
                 <Col sm={6} className="px-1">
                   <input
                     type="tel"
@@ -87,17 +88,21 @@ export const Contact = () => {
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
-                <Col>
+
+                <Col sm={6} className="px-1">
                   <textarea
                     value={formDetails.message}
                     placeholder="Message"
                     rows="6"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   ></textarea>
-                  <button type="submit">
-                    <span>{buttonText}</span>
-                  </button>
                 </Col>
+                <Col sm={6} className="px-1">
+                  <Button type="submit" variant="light">
+                    {buttonText}
+                  </Button>{" "}
+                </Col>
+
                 {status.message && (
                   <Col>
                     <p
