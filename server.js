@@ -9,18 +9,16 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static("./public"));
-app.listen(port, () => console.log(`http://127.0.0.1:${port}`));
+app.use("/", router);
+app.listen(5000, () => console.log("Server Running"));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(`${__dirname}/public/index.html`));
-});
+
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
     //For google you have to go to Gmail and set a application Password!
-    user: "xXx",
-    pass: "XxX",
+    user: "mr.petrovic.dejan@gmail.com",
+    pass: "pxdggvdjypcpjgwh",
   },
 });
 
@@ -41,7 +39,7 @@ router.post("/contact", (req, res) => {
   const mail = {
     from: name,
     //Our Email Adress
-    to: "mXxX@gmail.com",
+    to: "mr.petrovic.dejan@gmail.com",
     subject: "Contact Form SeaShepheard",
     html: ` <p> Name: ${name}</p>
         <p> E-Mail: ${email}</p>
