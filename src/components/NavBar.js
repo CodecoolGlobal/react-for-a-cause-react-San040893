@@ -6,6 +6,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import twitter from "../assets/img/twitter.png";
 
+
 export function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, seScrolled] = useState(false);

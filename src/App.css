@@ -383,7 +383,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 }
 
 .skill-slider .item img {
-  width: 50%;
+  width: 85%;
   margin: 0 auto 15px auto;
 }
 
@@ -450,7 +450,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #3707c6 -5.91%, #b0a0f5 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -489,7 +489,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #b5daf6 -5.91%, #2804ca 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -537,7 +537,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 35%;
   right: 0;
-  z-index: -4;
+  z-index: -1;
 }
 
 /*Projects Css*/

@@ -23,7 +23,7 @@ export const Skills = () => {
       items: 1,
     },
   };
-
+//Umbennen in Skill Containersad
   return (
     <section className="skill" id="skills">
       <Container>
@@ -37,9 +37,9 @@ export const Skills = () => {
                 infinite={true}
                 className="skill-slider"
               >
-                <div className="item">
+                <div className="item">                
                   <img src={logo} alt="Image" />
-                  <h5>Sea Shepherd Adds New Ship to Operation</h5>
+                  <h5>Sea Shepherd Adds New Ship to Operation</h5>                  
                 </div>
                 <div className="item">
                   <img src={logo} alt="Image" />
