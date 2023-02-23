@@ -6,7 +6,6 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import twitter from "../assets/img/twitter.png";
 
-
 export function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, seScrolled] = useState(false);
@@ -53,18 +52,16 @@ export function NavBar() {
               className={
                 activeLink === "skills" ? "active nav-bar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("home")}
+              onClick={() => onUpdateActiveLink("skills")}
             >
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               className={
-                activeLink === "projects"
-                  ? "active nav-bar-link"
-                  : "navbar-link"
+                activeLink === "project" ? "active nav-bar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("home")}
+              onClick={() => onUpdateActiveLink("project")}
             >
               Projects
             </Nav.Link>
@@ -82,7 +79,17 @@ export function NavBar() {
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
+              <Nav.Link
+                href="#contact"
+                className={
+                  activeLink === "contact"
+                    ? "active nav-bar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("contact")}
+              >
+                Contact Us!
+              </Nav.Link>
             </button>
           </span>
         </Navbar.Collapse>
