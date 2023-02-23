@@ -73,8 +73,8 @@ export function Projects() {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>who we are</p>
+            <h2>Who we are</h2>
+
             <Tab.Container id="projects-tab" defaultActiveKey="first">
               <Nav
                 variant="pills"
