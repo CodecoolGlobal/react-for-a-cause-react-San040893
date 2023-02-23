@@ -38,7 +38,7 @@ router.post("/contact", (req, res) => {
     from: name,
     //Our Email Adress
     to: "xxx@gmail.com",
-    subject: "Contact Form Submission -Portfolio",
+    subject: "Contact Form SeaShepheard",
     html: ` <p> Name: ${name}</p>
         <p> E-Mail: ${email}</p>
         <p> Phone: ${phone}</p>
