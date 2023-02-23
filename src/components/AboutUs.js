@@ -13,7 +13,7 @@ import director1 from "../assets/img/director1.jpg";
 import director2 from "../assets/img/director2.jpg";
 import director3 from "../assets/img/director3.jpg";
 
-export function Projects() {
+export function AboutUs() {
   const mission = [
     {
       title: "Saving Wildlife",
@@ -69,13 +69,13 @@ export function Projects() {
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="aboutUs" id="project">
       <Container>
         <Row>
           <Col>
             <h2>Who we are</h2>
 
-            <Tab.Container id="projects-tab" defaultActiveKey="first">
+            <Tab.Container id="aboutUss-tab" defaultActiveKey="first">
               <Nav
                 variant="pills"
                 className="nav-pills mb-5 justify-content-center align-items-center"

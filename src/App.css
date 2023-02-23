@@ -349,8 +349,8 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/*Skills Css*/
-.skill {
+/*newss Css*/
+.news {
   padding: 0 0 50px 0;
   position: relative;
   background-image: url(../src/assets/img/moving.gif);
@@ -358,7 +358,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
-.skill-bx {
+.news-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
@@ -366,12 +366,12 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   margin-top: -60px;
 }
 
-.skill h5 {
+.news h5 {
   font-size: 45px;
   font-weight: 700;
 }
 
-.skill p {
+.news p {
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -385,7 +385,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   position: relative;
 }
 
-.skill-slider .item img {
+.news-slider .item img {
   width: 85%;
   margin: 0 auto 15px auto;
 }
@@ -398,8 +398,8 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/*Projects Css*/
-.project {
+/*aboutUss Css*/
+.aboutUs {
   padding: 5rem;
   position: relative;
   background-image: url(../src/assets/img/banner2.jpg);
@@ -407,14 +407,14 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   background-size: cover;
 }
 
-.project h2 {
+.aboutUs h2 {
   font-size: 2.8125em;
   font-weight: 700;
   text-align: center;
   color: #000000b6;
 }
 
-.project .nav.nav-pills {
+.aboutUs .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
@@ -422,11 +422,11 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 
-.project .nav.nav-pills .nav-item {
+.aboutUs .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
 
-.project .nav.nav-pills .nav-link {
+.aboutUs .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 1.0625rem 0;
@@ -441,7 +441,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   z-index: 0;
 }
 
-.project .nav.nav-pills .nav-link::before {
+.aboutUs .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
   width: 0;
@@ -453,25 +453,25 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
-.project .nav.nav-pills .nav-link.active::before {
+.aboutUs .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
 
-.project .nav.nav-pills .nav-link.active {
+.aboutUs .nav.nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.nav-link#project-tabs-tab-first {
+.nav-link#aboutUs-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 0px;
 }
 
-.nav-link#project-tabs-tab-second {
+.nav-link#aboutUs-tabs-tab-second {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.nav-link#project-tabs-tab-third {
+.nav-link#aboutUs-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }

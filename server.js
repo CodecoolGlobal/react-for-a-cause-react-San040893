@@ -17,8 +17,8 @@ const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
     //For google you have to go to Gmail and set a application Password!
-    user: "mr.petrovic.dejan@gmail.com",
-    pass: "pxdggvdjypcpjgwh",
+    user: "xxx@gmail.com",
+    pass: "xxx",
   },
 });
 
@@ -39,7 +39,7 @@ router.post("/contact", (req, res) => {
   const mail = {
     from: name,
     //Our Email Adress
-    to: "mr.petrovic.dejan@gmail.com",
+    to: "xxx@gmail.com",
     subject: "Contact Form SeaShepheard",
     html: ` <p> Name: ${name}</p>
         <p> E-Mail: ${email}</p>

@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import logo from "../assets/img/shepherd.png";
 
-export const Skills = () => {
+export const News = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -25,17 +25,17 @@ export const Skills = () => {
   };
 //Umbennen in Skill Containersad
   return (
-    <section className="skill" id="skills">
+    <section className="news" id="news">
       <Container>
         <Row>
           <Col>
-            <div className="skill-bx">
+            <div className="news-bx">
               <h2>Sea Shepherd News</h2>
               <p>In the Headlines</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="skill-slider"
+                className="news-slider"
               >
                 <div className="item">                
                   <img src={logo} alt="Image" />

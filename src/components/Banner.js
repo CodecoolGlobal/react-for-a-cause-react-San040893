@@ -71,9 +71,6 @@ export function Banner() {
               from whales and dolphins, to sharks and rays, to fish and krill,
               without exception.
             </p>
-            <button onClick={() => console.log("connect")}>
-              lets Connect <ArrowRightCircle size={25} />
-            </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
