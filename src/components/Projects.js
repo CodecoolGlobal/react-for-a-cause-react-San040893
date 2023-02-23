@@ -5,39 +5,66 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/whale.jpg";
 import projImg2 from "../assets/img/rescure.jpg";
-import projImg3 from "../assets/img/saleship.jpg";
+import saleship from "../assets/img/saleship.jpg";
+import farley from "../assets/img/fleet.jpg";
+import bob from "../assets/img/ship.jpg";
+import martin from "../assets/img/marting.jpg";
+import director1 from "../assets/img/director1.jpg";
+import director2 from "../assets/img/director2.jpg";
+import director3 from "../assets/img/director3.jpg";
 
 export function Projects() {
-  const projects = [
+  const mission = [
     {
-      title: "Hallo LucAS",
-      description: "Design & Development",
+      title: "Saving Wildlife",
+      description:
+        "Working under direct supervision and in complete partnership with host governments",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Arresting illegal Fishers",
+      description: "Working with the Navi",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Fighting for Marine life",
+      description:
+        "Over the past five years, we assisted law enforcers from our partner governments as they arrested dozens of vessels resulting in numerous successful prosecutions. ",
+      imgUrl: saleship,
+    },
+  ];
+  const fleet = [
+    {
+      title: "Bob Barker",
+      description: "long-Range Ice-Strengthended Vessel",
+      imgUrl: bob,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Farley Mowat",
+      description: "Coast Guard Cutter",
+      imgUrl: farley,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Martin Sheen",
+      description: "Sailboat",
+      imgUrl: martin,
+    },
+  ];
+  const team = [
+    {
+      title: "Director",
+      description: "Pritam Singh",
+      imgUrl: director2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Digital Media Coordinator",
+      description: "Chris Smith",
+      imgUrl: director1,
+    },
+    {
+      title: "Science Coordinator",
+      description: "Laura Sanchez",
+      imgUrl: director3,
     },
   ];
 
@@ -47,7 +74,7 @@ export function Projects() {
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p>ALLLLEEEEESSSSSAAALLASL</p>
+            <p>who we are</p>
             <Tab.Container id="projects-tab" defaultActiveKey="first">
               <Nav
                 variant="pills"
@@ -55,34 +82,36 @@ export function Projects() {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab1</Nav.Link>
+                  <Nav.Link eventKey="first">Our Mission</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                  <Nav.Link eventKey="second">Our Fleet</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                  <Nav.Link eventKey="third">Our Team</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => {
+                    {mission.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  {" "}
-                  {projects.map((project, index) => {
-                    return <ProjectCard key={index} {...project} />;
-                  })}
+                  <Row>
+                    {fleet.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                  {" "}
-                  {projects.map((project, index) => {
-                    return <ProjectCard key={index} {...project} />;
-                  })}
+                  <Row>
+                    {team.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
