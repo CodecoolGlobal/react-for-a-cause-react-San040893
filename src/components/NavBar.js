@@ -68,18 +68,18 @@ export function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://twitter.com/SeaShepherdSSCS">
+              <a href="https://twitter.com/SeaShepherdSSCS" target="_blank">
                 <img src={twitter} alt="" />
               </a>
-              <a href="https://www.facebook.com/SeaShepherdSSCS/">
+              <a href="https://www.facebook.com/SeaShepherdSSCS/" target="_blank">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://www.instagram.com/seashepherdsscs/">
+              <a href="https://www.instagram.com/seashepherdsscs/" target="_blank">
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <Nav.Link style={{color:'red'}}
+            <button className="vvd">
+              <Nav.Link style={{color:'#104e8b'}}
                 href="#contact"
                 className="contactText"
                 onClick={() => onUpdateActiveLink("contact")}

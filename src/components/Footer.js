@@ -8,12 +8,14 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-item-center">
-          <Col sm={6}>
+        <Row className="align-item-center ">
+          <Col sm={6} className="mt-4">
             <img src={logo} alt="logo" />
           </Col>
+          
           <Col sm={6} className="text-center text-sm-end">
-            <div className="social-icon" style={{ marginBottom: +5 }}>
+          
+            <div className="social-icon mt-4" >
               <a href="https://twitter.com/SeaShepherdSSCS">
                 <img src={twitter} />
               </a>
@@ -24,7 +26,7 @@ export const Footer = () => {
                 <img src={navIcon3} />
               </a>
             </div>
-            <p>Sea Shepheard</p>
+            <p><small>© 2023 PowerPuffPirates development. All rights reserved.</small></p>
           </Col>
         </Row>
       </Container>

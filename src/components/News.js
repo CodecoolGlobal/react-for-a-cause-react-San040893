@@ -29,13 +29,15 @@ export const News = () => {
       <Container>
         <Row>
           <Col>
-            <div className="news-bx">
+            <div className="news-bx  mt-5" style={{opacity:0.7}}>
+              <div style={{opacity:1}}>
               <h2>Sea Shepherd News</h2>
               <p>In the Headlines</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="news-slider"
+                style={{}}
               >
                 <div className="item">                
                   <img src={logo} alt="Image" />
@@ -54,6 +56,7 @@ export const News = () => {
                   <h5>Sea Shepherd Working with Navy to Remove Illegal Nets</h5>
                 </div>
               </Carousel>
+              </div>
             </div>
           </Col>
         </Row>

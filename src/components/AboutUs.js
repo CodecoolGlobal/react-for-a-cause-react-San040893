@@ -69,7 +69,7 @@ export function AboutUs() {
   ];
 
   return (
-    <section className="aboutUs" id="project">
+    <section className="aboutUs" id="aboutUs">
       <Container>
         <Row>
           <Col>
