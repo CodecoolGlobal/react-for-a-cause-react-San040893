@@ -414,16 +414,6 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   color: #000000b6;
 }
 
-.project p {
-  color: #ff4000;
-  font-size: 1.125em;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 0.875rem auto 1.875rem auto;
-  text-align: center;
-  width: 56%;
-}
-
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -550,7 +540,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 
 /*Footer Css*/
 .footer {
-  padding: 0 0 3.125rem 0;
+  padding: 0 0 50px 0;
   background-image: url("./assets/img/footer-bg.png");
   background-position: center center;
   background-size: cover;
