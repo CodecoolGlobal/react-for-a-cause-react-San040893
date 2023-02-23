@@ -16,7 +16,7 @@ const contactEmail = nodemailer.createTransport({
   auth: {
     //For google you have to go to Gmail and set a application Password!
     user: "xxx@gmail.com",
-    pass: "",
+    pass: "xxx",
   },
 });
 

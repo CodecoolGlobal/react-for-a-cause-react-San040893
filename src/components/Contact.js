@@ -12,8 +12,9 @@ export const Contact = () => {
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
+  const [buttonText, setButtonText] = useState('Send');
+  const [isVisible, setIsVisible] = useState(true);
   const onFormUpdate = (catagory, value) => {
     setFormDetails({
       ...formDetails,
@@ -22,8 +23,9 @@ export const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefualt();
-    setButtonText("Sending...");
+    e.preventDefault();
+    console.log(formDetails);
+    setIsVisible(false);
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -35,14 +37,31 @@ export const Contact = () => {
     let result = response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent already" });
+      setStatus({ success: true, message: 'Message sent already' });
     } else {
-      setStatus({
-        success: false,
-        message: "Something went wrong, please send this again later.",
-      });
+      setStatus({ success: false, message: 'Something went wrong, please send this again later.'});
     }
   };
+
+  if (!isVisible) {
+    return (
+      <section className="contact" id="contact">
+        <Container>
+          <Row className="align-items-center">
+            <Col md={6}>
+              <img className="py-5" src={turtleImg} alt="contact us" />
+            </Col>
+            <Col md={6}>
+              <h2>
+                We appreciate you contacting us. One of our colleagues will get
+                back in touch with you soon! Have a great day!
+              </h2>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    );
+  }
 
   return (
     <section className="contact" id="contact">
@@ -53,7 +72,7 @@ export const Contact = () => {
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
-            <form onSunmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
@@ -99,21 +118,15 @@ export const Contact = () => {
                 </Col>
                 <Col sm={6} className="px-1">
                   <Button type="submit" variant="light">
-                    {buttonText}
+                    Send
                   </Button>{" "}
-                </Col>
-
-                {status.message && (
+                  {
+                  status.message &&
                   <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
+                    <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                   </Col>
-                )}
+                }
+                </Col>
               </Row>
             </form>
           </Col>
